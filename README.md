@@ -33,30 +33,24 @@ The tool uses the Least Significant Bit (LSB) steganography technique combined w
 - Node.js and npm
 - Web browser with JavaScript enabled
 
-## Installation
+## Installation & Setup
 
-1. Clone the repository:
-
-git clone https://github.com/your-username/steganography-tool.git
-cd steganography-tool
-
-2. Set up the Python backend:
-
+1. Clone and setup backend
+git clone https://github.com/uttkarsh-8/setgo-tool.git
+cd setgo-tool
 cd steganography_api
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+pip install flask pillow numpy cryptography flask-cors
+python app.py## Usage
 
-3. Set up the React frontend:
-
-cd steganography_api
-python app.py
+2. Setup frontend
 
 cd stego-frontend
+npm install
 npm start
 
-
-## Usage
+Visit http://localhost:3000 to use the application.
 
 To Hide a Message:
 
